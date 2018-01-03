@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+	<title>AddressBook</title>
+	<link rel="stylesheet" href="styles/addressbook.css">
+	<script src="scripts/addressbook.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>Address Book</h1>
+		</div>
+		<!--adding contacts-->
+		<div class="contactadd"><button id="ContactAdd">+ Add new contact</button></div>
+		<!--contact form that needs to be filled in-->
+		<div class="contactaddForm">
+			<label for="fullname">Name</label><input type="text" id="fullname" class="formFields" placeholder="Full Name">
+			<label for="phone">Phone</label><input type="text" id="phone" class="formFields" placeholder="PhoneNumber">
+			<label for="address">Address</label><input name="address" id="address" class="formFields" placeholder="Address">
+			<label for="email">Email</label><input type="text" id="email" class="formFields" placeholder="Email">
+			<br><br>
+			<!--buttons for actual addition and cancelling-->
+			<button id="Add">Add Now</button><button id="Cancel">Cancel</button>
+		</div>
+		<div class="title">
+			<h2>Contacts</h2>
+		</div>
+		<!--to show what part of contact is displayed-->
+		<div class="entry" id="top">
+			<div class="name" id="top">Name</div>
+			<div class="email" id="top">Email</div>
+			<div class="phone" id="top">Phone Number</div>
+			<div class="address" id="top">Address</div>			
+		</div>
+		<div class="addbook">
+			<!--contacts are added here-->
+		</div>
+	</div>
+</body>
+</html>
